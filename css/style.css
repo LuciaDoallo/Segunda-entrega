@@ -3,9 +3,9 @@
     padding: 0;
 }
 
-/* a{
+a{
     text-decoration: none;
-} */
+}
 @font-face {
     font-family: 'Montserrat', sans-serif ;
     src: url('https://fonts.googleapis.com/css2? family= Montserrat:wght@500 & display=swap');
@@ -38,13 +38,23 @@ nav ul li a{
 
 } */
 /* --------------------------------------------- */
+.activo{
+    padding: 8px 16px 8px 16px;
+    background-color: purple;
+    border-radius: 5px;
+    color: white;
 
+}
+.inactivo{
+     color: white;
+}
 
 /* INDEX--------------------------------------------------------------- */
 .linea {
     display: inline-block;
     align-items: center;   
 }
+
 
 .texto_welcome {
     display: flex;
@@ -212,13 +222,30 @@ footer{
 
 /* Perfil */
 
-.titulo_perfil  div h2{
+.titulo_perfil h2{
     position: relative;
-    bottom: 150px;
+    top : 50px; 
     left: 200px;
-    font-family: 'Montserrat', sans-serif ;
+    
     font-size: 50px;
 }
+.parrafo_perfil p{
+    position: relative;
+    top: 100px;
+    width: auto;
+    height: auto;
+    padding: 20px;
+}
+
+.general_perfil{
+    color: white;
+    font-family: 'Montserrat', sans-serif ;
+}
+.inLine{
+    display: flex;
+    flex-direction: row;
+}
+
 
 /* ------------------------------------------ */
 
@@ -325,6 +352,9 @@ footer{
     align-items: center;
     column-gap: 20%;
 }
+div{
+    grid-area: div;
+}
 
 .grilla_index{
     display:grid;
@@ -355,6 +385,7 @@ footer{
         
     grid-template-areas:
         "header header header header "        
+        "header header header header "  
         "nav nav nav nav "
         "b_bloque1 b_bloque1 b_bloque1 b_bloque1"
         "b_bloque2 b_bloque2 b_bloque2 b_bloque2"        
@@ -371,6 +402,43 @@ footer{
     justify-items: center;
 
         
+}
+
+/* Grilla perfil */
+.grilla_perfil{
+    display: grid;
+    grid-template-columns: repeat( 4, 1fr);
+    grid-template-areas: 
+    "header header header header"
+    "header header header header"
+    "nav nav nav nav"
+    "div div div div"
+    "footer footer footer footer"
+    ;
+
+    align-items: center;
+    justify-items: center;
+}
+
+#titulo_hobbie{
+    grid-area: titulo;
+    height: 50px;
+}
+
+.grilla_hobbie{
+    display: grid;
+    grid-template-columns: repeat( 4, 1fr);
+    grid-template-areas: 
+    "header header header header"
+    "header header header header"
+    "nav nav nav nav"
+    "titulo titulo titulo titulo"
+    "div div div div"
+    "footer footer footer footer"
+    ;
+
+    align-items: center;
+    justify-items: center;
 }
 
 
