@@ -1,0 +1,639 @@
+*{
+    margin: 0px;
+    padding: 0;
+}
+
+a{
+    text-decoration: none;
+}
+@font-face {
+    font-family: 'Montserrat', sans-serif ;
+    src: url('https://fonts.googleapis.com/css2? family= Montserrat:wght@500 & display=swap');
+}
+
+body{
+    background-image: linear-gradient(to bottom,black, black , rgb(172, 38, 161) ) 
+}
+.img_header {
+    width: 100%;
+    height:  100%;
+    
+}
+/* Barra navegacio ------------------------*/
+nav ul li{
+    display: inline-flex;
+    align-items: center;
+    justify-items: center;
+    margin: 20px;
+    font-family: 'Montserrat', sans-serif ;
+    
+}
+
+nav ul li a{
+    color: white;
+    font-size: 30px;
+    line-height: 20px;
+    
+
+
+}
+/* --------------------------------------------- */
+
+
+/* INDEX--------------------------------------------------------------- */
+.linea {
+    display: inline-block;
+    align-items: center;   
+}
+
+.texto_welcome {
+    display: flex;
+    flex-direction: column;
+    justify-items:center ;
+    align-items: center;
+    
+    
+}
+
+
+.img_index  div img:hover{
+    position: relative;
+    left: 50px;
+    transition: 2s;
+    transform: translate(20px, 20px);
+} 
+
+.titulo_index  div h1{
+    position: relative;
+    /* bottom: 150px; */
+    right: 100px;
+    font-family: 'Montserrat', sans-serif ;
+    font-size: 40px;
+    color: white;
+    font-family: 'Montserrat', sans-serif ;
+    text-align: center;
+
+    animation-name: un_efecto;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in;
+    animation-duration: 2s;
+    animation-delay: 10s
+}
+@keyframes un_efecto {
+    0%{ color: rebeccapurple; }
+    10%{ color: blue ; }
+    25%{ color:aliceblue;
+    font-size: 50px; }
+    50%{ color: rebeccapurple; }
+    75%{ color: blue ;}
+    100%{color:aliceblue;
+        font-size: 40px;}
+ }
+ 
+.parrafo_index  div p{
+    width: auto;
+    height: auto;
+    font-size: 20px;
+
+    position: relative;
+    /* bottom: 130px; */
+    right: 100px;
+    font-family: 'Montserrat', sans-serif ;
+    text-align: center;
+    color: white;
+   
+} 
+/* ----------------------------------------------------------------- */
+
+
+/*Footer---------------------------------------------------------------*/
+
+footer ul li{
+    display: inline;
+    margin: 20px;
+
+    position: relative;
+    top: 40px;
+}
+
+
+
+
+footer{
+    height: 120px;
+    /* background-image: url('https://img1.wallspic.com/previews/8/2/9/6/4/146928/146928-textil_de_rayas_rosa_y_negro-x750.jpg'); */
+
+    
+}
+.efecto:hover{
+    transition: 2s;
+    transform: scale(1.5, 1.5);
+}
+
+.imgT{
+    color: white;
+    size: 20px;
+    font-size: 50px ;
+    position: relative;
+    bottom: 15px; 
+
+}
+.centrar{
+    text-align: center;
+    display: inline;
+}
+/* ---------------------------------------------------------- */
+
+/*Portfolio imagenes*/
+.tamaño1{
+    height: 200px;
+    width: 400px;
+}
+.tamaño2{
+    height: 120,84px;
+    width: 400px;
+
+}
+.tamaño3{
+    height: 220px;
+    width: 400px;
+
+}
+.tamaño4{
+    height: 285px;
+    width: 300px;
+
+}
+.tamaño5{
+    height: 90px;
+    width: 400px;
+
+}
+.tamaño6{
+    height: 450px;
+    width: 300px;
+
+}
+.tamaño7{
+    height: 250px;
+    width: 400px;
+
+}
+
+.trabajos{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+}
+
+.trabajos h2{
+    text-align: center;
+    line-height: 80px;
+    color: white;
+    font-family: 'Montserrat', sans-serif ;
+    font-size: 30px;
+}
+
+.trabajos p{
+    text-align: center;
+    line-height: 40px;
+    color: white;
+    font-family: 'Montserrat', sans-serif ;
+    font-size: 20px;
+
+}
+
+.img_portfolio img{
+    height: 450px;
+    width: 750px;
+}
+/* 
+.ajuste_img img {
+   margin: 50px ; */
+   /* position: relative;
+   left: 100px;
+          */
+
+.img_center{
+    position: relative;
+    bottom: 40px; 
+}
+
+
+/* ---------------------------------------------- */
+
+/* Perfil */
+
+.titulo_perfil  div h2{
+    position: relative;
+    bottom: 150px;
+    left: 200px;
+    font-family: 'Montserrat', sans-serif ;
+    font-size: 50px;
+}
+
+/* ------------------------------------------ */
+
+/* Contacto */
+
+.Bordes_text h4{
+    border: purple;
+    border-width: 4px;
+    border-style: groove;
+    width: 900px;
+    margin: 10px;
+    position: relative;
+    left: 150px;
+}
+
+.Centrar_form h2{
+    text-align: center;
+}
+
+
+
+
+/* Portfolio E Index Grid --------------------------------------*/
+
+header{
+    grid-area: header;
+    height: 300px;
+}
+
+nav{
+    grid-area: nav;
+    height: 100px;
+}
+
+footer{
+    grid-area: footer;
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+}
+
+#b_bloque1{
+    grid-area: b_bloque1;
+    height: 120px;
+    }
+#b_bloque2{
+    grid-area: b_bloque2;
+    height: 400px;
+    display: inline-flex;
+    justify-items: center;
+    align-items: center;
+    column-gap: 10%;
+}
+
+#b_bloque3{
+    grid-area: b_bloque3;
+    height: 400px;
+    display: inline-flex;
+    justify-items: center;
+    align-items: center;
+    column-gap: 10%;
+}
+
+#m_bloque1{
+    grid-area: m_bloque1;
+    height: 120px;
+}
+
+#m_bloque2{
+    grid-area: m_bloque2;
+    height: 400px;
+    display: inline-flex;
+    justify-items: center;
+    align-items: center;
+    column-gap: 10%;
+}
+
+#m_bloque3{
+    grid-area: m_bloque3;
+    height: 400px;
+    display: inline-flex;
+    justify-items: center;
+    align-items: center;
+    column-gap: 10%;
+}
+
+#m_bloque4{
+    grid-area: m_bloque4;
+    height: 400px;
+    display: inline-flex;
+    justify-items: center;
+    align-items: center;
+    column-gap: 10%;
+}
+
+#imagen_index{
+    grid-area: div;
+    display: inline-flex;
+    justify-items: center;
+    align-items: center;
+    column-gap: 20%;
+}
+
+.grilla_index{
+    display:grid;
+    grid-template-columns: repeat(4, 1fr);
+    
+    grid-template-areas:
+        "header header header header"
+        "header header header header"
+        "nav nav nav nav "
+        "div div div div "
+        "div div div div "
+        "footer footer footer footer"
+    ;
+    
+    align-items: center;
+    justify-items: center;
+    
+} 
+
+
+
+
+.grilla_portfolio{
+    display:grid;
+    grid-template-columns: repeat(4, 1fr);
+    /* grid-column-gap: 20px; */
+        /* grid-template-rows: repeat(10, 600px); */
+        
+    grid-template-areas:
+        "header header header header "        
+        "nav nav nav nav "
+        "b_bloque1 b_bloque1 b_bloque1 b_bloque1"
+        "b_bloque2 b_bloque2 b_bloque2 b_bloque2"        
+        "b_bloque3 b_bloque3 b_bloque3 b_bloque3"
+        "m_bloque1 m_bloque1 m_bloque1 m_bloque1"
+        "m_bloque2 m_bloque2 m_bloque2 m_bloque2"
+        "m_bloque3 m_bloque3 m_bloque3 m_bloque3"
+        "m_bloque4 m_bloque4 m_bloque4 m_bloque4"
+        "footer footer footer footer"
+    ;
+        
+        
+    align-items: center;
+    justify-items: center;
+
+        
+}
+
+
+
+
+/* MEDIA TABLET------------------------------------- */
+@media  (min-width: 579px) and (max-width: 780px){
+    header{
+        height: 200px;
+    }
+
+    nav{ 
+        height: 80px; 
+    }
+
+    footer{
+        height: 100px;
+    }
+
+    nav ul li a{
+        font-size: 15px;
+        line-height: 20px;
+    }
+
+    /* PORTFOLIO------------------------------------ */
+
+     #b_bloque1{
+        height: 100px;
+    }
+    #b_bloque2{
+        height: 150px;
+    }
+    #b_bloque3{
+        height: 150px;
+    }
+    #m_bloque1{
+         height: 100px;
+    }
+    #m_bloque2{
+        height: 150px;
+    }
+    #m_bloque3{
+        height: 230px;
+    }
+    #m_bloque4{
+        height: 150px;
+    }
+
+/* INDEX */
+.titulo_index  div h1{
+    right: 40px;
+    font-size: 20px;
+    text-align: center;
+}
+
+.parrafo_index  div p{
+
+    font-size: 10px;
+    right: 40px;
+    text-align: center;
+    
+   
+} 
+
+
+/* PORTFOLIO */
+    .tamaño1{
+        height: 100px;
+        width: 200px;
+    }
+    .tamaño2{
+        height: 60,42px;
+        width: 200px;
+        top: 5px;
+    
+    }
+    .tamaño3{
+        height: 121.5px;
+        width: 200px;
+    
+    }
+    .tamaño4{
+        height: 142.8px;
+        width: 150px;
+    
+    }
+    .tamaño5{
+        height: 45px;
+        width: 200px;
+    
+    }
+    .tamaño6{
+        height: 225px;
+        width: 150px;
+    
+    }
+    .tamaño7{
+        height: 125px;
+        width: 200px;
+    
+    }
+
+    
+    .trabajos h2{
+        line-height: 50px;
+        font-size: 20px;
+    }
+    
+    .trabajos p{
+        line-height: 20px;
+        font-size: 10px;
+    
+    }
+
+    .imgT{
+        /* size: 20px; */
+        font-size: 40px ;
+    }
+
+
+
+    /* Grid *//* --------------------------------- */
+
+    .grilla_portfolio{
+        grid-template-columns: repeat(2, 1fr);
+        /* grid-template-rows: repeat(10, 1fr); */
+        grid-template-areas:
+        "header header "
+        "nav nav  "
+        "b_bloque1 b_bloque1 "
+        "b_bloque2 b_bloque2 "  
+        "b_bloque3 b_bloque3 "
+        "m_bloque1 m_bloque1 "
+        "m_bloque2 m_bloque2 "
+        "m_bloque3 m_bloque3 "
+        "m_bloque4 m_bloque4"
+        "footer footer"
+        ;
+    
+/* --------------------------------- */
+
+    }
+    .grilla_index{
+        display:grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-column-gap: 20%;
+        
+        
+        grid-template-areas:
+            "header header"
+            "nav nav "
+            "div div "
+            "div div"
+            "div div"
+            "footer footer"
+        ;
+        
+        align-items: center;
+        justify-items: center;
+        
+    } 
+    
+}
+
+@media (min-width: 781px) and (max-width: 1200px){
+    header{
+        height: 300px;
+    }
+
+    nav{
+        height: 100px;    
+    }
+
+    footer{
+          height: 100px;
+    }
+
+    nav ul li a{
+        font-size: 30px;
+        line-height: 20px;
+    }
+
+    /* PORTFOLIO */
+
+    #b_bloque1{
+        height: 200px;
+    }
+    #b_bloque2{
+        height: 250px;
+    }
+    #b_bloque3{
+        height: 250px;
+    }
+    #m_bloque1{
+        height: 200px;
+    
+    }
+    #m_bloque2{ 
+        height: 300px;
+    }
+    #m_bloque3{
+        height: 500px;
+    }
+    #m_bloque4{
+        
+        height: 250px;
+    }
+  
+
+/* Grid *//* --------------------------------- */
+    
+    .grilla_portfolio{
+        grid-template-columns: repeat(3, 1fr);
+        /* grid-template-rows: repeat(10, 1fr); */
+        grid-template-areas:
+        "header header header"
+        "nav nav nav "
+        "b_bloque1 b_bloque1 b_bloque1"
+        "b_bloque2 b_bloque2 b_bloque2 "  
+      
+        "b_bloque3 b_bloque3  b_bloque3"
+        
+        "m_bloque1 m_bloque1 m_bloque1"
+        
+        "m_bloque2 m_bloque2 m_bloque2"
+        
+        "m_bloque3 m_bloque3 m_bloque3"
+        
+        "m_bloque4 m_bloque4 m_bloque4"
+        "footer footer footer"
+        ;
+    
+/* ------------------------------ */
+
+    }
+    .grilla_index{
+        display:grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-column-gap: 20%;
+        
+        
+        grid-template-areas:
+            "header header header"
+            "nav nav nav"
+            "div div div "
+            "div div div"
+            "div div div"
+            "footer footer footer"
+        ;
+        
+        align-items: center;
+        justify-items: center;
+        
+    } 
+}
