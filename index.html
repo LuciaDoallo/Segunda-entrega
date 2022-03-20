@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lucia Doallo</title>
+    <link rel="stylesheet" href="./bootstrap-5.1.3-dist/css/bootstrap.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 </head>
@@ -12,32 +13,18 @@
     <header>
         <!-- Imagen de encabezado -->
         <img class="img_header" src="images/logo lucia doallo.png"  alt="Lucia Doallo">
-        <audio  autoplay loop src="audio/y2mate.com - Kygo  Selena Gomez  It Aint Me Audio.mp3"></audio>
+        <!-- <audio  controls autoplay loop src="audio/y2mate.com - Kygo  Selena Gomez  It Aint Me Audio.mp3"></audio> -->
     </header>
-    <nav>
-        <!-- Esto es la barra de navegación -->
-        <ul class="color">
-            <!-- Lista desordenada -->
-            <li>
-               <a class="efecto" href="index.html">Home</a> 
-            </li>
-            <li>
-                <a class="efecto" href="pages/portfolio.html">Portfolio</a>
-            </li>
-            <li> 
-                <a class="efecto" href="pages/perfil.html">Perfil</a> 
-            </li>
-            <li>
-                <a class="efecto" href="pages/hobbie.html">Hobbie</a>
-            </li>
-            <li>
-                <a class="efecto" href="pages/contacto.html">Contacto</a>
-            </li>
-        </ul>
+    <nav class="nav nav-pills flex-column flex-sm-row">
+        <a class="flex-sm-fill text-sm-center nav-link active " aria-current="page" href="index.html">Home</a>
+        <a class="flex-sm-fill text-sm-center nav-link " href="./pages/portfolio.html">Portfolio</a>
+        <a class="flex-sm-fill text-sm-center nav-link" href="./pages/perfil.html">Perfil</a>
+        <a class="flex-sm-fill text-sm-center nav-link " href="./pages/hobbie.html">Hobbie</a>
+        <a class="flex-sm-fill text-sm-center nav-link " href="./pages/contacto.html">Contacto</a>
     </nav>
     <div id="imagen_index" class="img_index titulo_index parrafo_index linea">
-        <div >
-            <img src="images/pexels-photo-1779487.jpeg" width="100%" height="60%" alt="Imagen de entrada">
+        <div class="margen">
+            <img  src="images/pexels-photo-1779487.jpeg" width="100%" height="60%" alt="Imagen de entrada">
         </div>
         <div class="texto_welcome  ">
             <h1>Welcome!!</h1>
@@ -67,6 +54,6 @@
         
         </ul>
     </footer>
-    
+    <script src="./bootstrap-5.1.3-dist/js/bootstrap.js"></script>
 </body>
 </html>
