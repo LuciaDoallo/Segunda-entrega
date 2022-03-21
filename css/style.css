@@ -5,6 +5,7 @@
 
 a{
     text-decoration: none;
+    margin:20px;
 }
 @font-face {
     font-family: 'Montserrat', sans-serif ;
@@ -139,65 +140,72 @@ footer{
     text-align: center;
     display: inline;
 }
+
+#img_{
+    height: 60%;
+    width: 100%;
+}
 /* ---------------------------------------------------------- */
 
 /*Portfolio imagenes*/
 .tamaño1{
-    height: 200px;
-    width: 400px;
+    height: 50%;
+    width: 100%;
 }
 .tamaño2{
-    height: 120,84px;
-    width: 400px;
+    height: 27%;
+    width: 100%;
 
 }
 .tamaño3{
-    height: 220px;
-    width: 400px;
+    height: 55%;
+    width: 100%;
 
 }
 .tamaño4{
-    height: 285px;
-    width: 300px;
+    height: 285px64.5%;
+    width: 75%;
 
 }
 .tamaño5{
-    height: 90px;
-    width: 400px;
+    height: 25%;
+    width: 100%;
 
 }
 .tamaño6{
-    height: 450px;
-    width: 300px;
+    height: 100%;
+    width: 62.5%;
 
 }
 .tamaño7{
-    height: 250px;
-    width: 400px;
+    height: 60%;
+    width: 100%;
 
 }
 
 .trabajos{
     display: flex;
     flex-direction: column;
-    align-content: center;
-    justify-content: center;
-}
-
-.trabajos h2{
-    text-align: center;
-    line-height: 80px;
+    align-items: center;
+    justify-items: center;
     color: white;
     font-family: 'Montserrat', sans-serif ;
-    font-size: 30px;
+    text-align: center;
+    padding: 10px;
+    
+}
+
+
+.trabajos h2{
+    line-height: 80%;
+    font-size: 300%;
+    padding: 10%;
 }
 
 .trabajos p{
-    text-align: center;
-    line-height: 40px;
-    color: white;
-    font-family: 'Montserrat', sans-serif ;
-    font-size: 20px;
+    line-height: 80%;
+    font-size: 200%;
+    /* padding: 10%; */
 
 }
 
@@ -205,12 +213,7 @@ footer{
     height: 450px;
     width: 750px;
 }
-/* 
-.ajuste_img img {
-   margin: 50px ; */
-   /* position: relative;
-   left: 100px;
-          */
+
 
 .img_center{
     position: relative;
@@ -245,7 +248,13 @@ footer{
     display: flex;
     flex-direction: row;
 }
-
+#img_perfil{
+    grid-area: img_perfil;
+    margin: 20px;
+}
+#texto_perfil{
+    grid-area: texto_perfil;
+}
 
 /* ------------------------------------------ */
 
@@ -258,9 +267,12 @@ footer{
     width: 900px;
     margin: 10px;
     position: relative;
-    left: 150px;
+   
 }
-
+.color{
+    color: white;
+    font-family: 'Montserrat', sans-serif ;
+}
 .Centrar_form h2{
     text-align: center;
 }
@@ -279,8 +291,13 @@ nav{
     grid-area: nav;
     height: auto;
     width: 1200px;
-    padding: 20px;
+    padding-right: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
 }
+
 
 footer{
     grid-area: footer;
@@ -294,59 +311,101 @@ footer{
 #b_bloque1{
     grid-area: b_bloque1;
     height: 120px;
+    margin: 30px;
+    font-size: 30%;
     }
-#b_bloque2{
-    grid-area: b_bloque2;
-    height: 400px;
-    display: inline-flex;
-    justify-items: center;
-    align-items: center;
-    column-gap: 10%;
+#b_bloque2a{
+    grid-area: b_bloque2a;
+    margin: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+} 
+#b_bloque2b{
+    grid-area: b_bloque2b;
+    margin: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
 }
 
-#b_bloque3{
-    grid-area: b_bloque3;
-    height: 400px;
-    display: inline-flex;
-    justify-items: center;
-    align-items: center;
-    column-gap: 10%;
+#b_bloque3a{
+    grid-area: b_bloque3a;
+    margin: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
 }
-
+#b_bloque3b{
+    grid-area: b_bloque3b;
+    margin: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+}
 #m_bloque1{
     grid-area: m_bloque1;
-    height: 120px;
+    margin: 30px;
+    height: 60px;
+    
 }
 
-#m_bloque2{
-    grid-area: m_bloque2;
-    height: 400px;
-    display: inline-flex;
-    justify-items: center;
-    align-items: center;
-    column-gap: 10%;
+#m_bloque2a{
+    grid-area: m_bloque2a;
+    margin: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+}
+#m_bloque2b{
+    grid-area: m_bloque2b;
+    margin: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+}
+#m_bloque3a{
+    grid-area: m_bloque3a;
+    margin: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content:center ;
+    align-content: center;
+}
+#m_bloque3b{
+    grid-area: m_bloque3b;
+    margin: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
 }
 
-#m_bloque3{
-    grid-area: m_bloque3;
-    height: 400px;
-    display: inline-flex;
-    justify-items: center;
-    align-items: center;
-    column-gap: 10%;
+#m_bloque4a{
+    grid-area: m_bloque4a;
+    margin: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
 }
-
-#m_bloque4{
-    grid-area: m_bloque4;
-    height: 400px;
-    display: inline-flex;
-    justify-items: center;
-    align-items: center;
-    column-gap: 10%;
+#m_bloque4b{
+    grid-area: m_bloque4b;
+    margin: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
 }
 
 #imagen_index{
-    grid-area: div;
+    grid-area: div2;
     display: inline-flex;
     justify-items: center;
     align-items: center;
@@ -364,8 +423,8 @@ div{
         "header header header header"
         "header header header header"
         "nav nav nav nav "
-        "div div div div "
-        "div div div div "
+        "div2 div2 div2 div2 "
+        "div2 div2 div2 div2 "
         "footer footer footer footer"
     ;
     
@@ -388,12 +447,12 @@ div{
         "header header header header "  
         "nav nav nav nav "
         "b_bloque1 b_bloque1 b_bloque1 b_bloque1"
-        "b_bloque2 b_bloque2 b_bloque2 b_bloque2"        
-        "b_bloque3 b_bloque3 b_bloque3 b_bloque3"
+        "b_bloque2a b_bloque2a b_bloque2b b_bloque2b"        
+        "b_bloque3a b_bloque3a b_bloque3b b_bloque3b"
         "m_bloque1 m_bloque1 m_bloque1 m_bloque1"
-        "m_bloque2 m_bloque2 m_bloque2 m_bloque2"
-        "m_bloque3 m_bloque3 m_bloque3 m_bloque3"
-        "m_bloque4 m_bloque4 m_bloque4 m_bloque4"
+        "m_bloque2a m_bloque2a m_bloque2b m_bloque2b"
+        "m_bloque3a m_bloque3a m_bloque3b m_bloque3b"
+        "m_bloque4a m_bloque4a m_bloque4b m_bloque4b"
         "footer footer footer footer"
     ;
         
@@ -412,7 +471,7 @@ div{
     "header header header header"
     "header header header header"
     "nav nav nav nav"
-    "div div div div"
+    "img_perfil img_perfil texto_perfil texto_perfil"
     "footer footer footer footer"
     ;
 
@@ -426,6 +485,22 @@ div{
 }
 
 .grilla_hobbie{
+    display: grid;
+    grid-template-columns: repeat( 4, 1fr);
+    grid-template-areas: 
+    "header header header header"
+    "header header header header"
+    "nav nav nav nav"
+    "titulo titulo titulo titulo"
+    "div div div div"
+    "footer footer footer footer"
+    ;
+
+    align-items: center;
+    justify-items: center;
+}
+
+.grilla_contacto{
     display: grid;
     grid-template-columns: repeat( 4, 1fr);
     grid-template-areas: 
@@ -465,27 +540,7 @@ div{
 
     /* PORTFOLIO------------------------------------ */
 
-     #b_bloque1{
-        height: 100px;
-    }
-    #b_bloque2{
-        height: 150px;
-    }
-    #b_bloque3{
-        height: 150px;
-    }
-    #m_bloque1{
-         height: 100px;
-    }
-    #m_bloque2{
-        height: 150px;
-    }
-    #m_bloque3{
-        height: 230px;
-    }
-    #m_bloque4{
-        height: 150px;
-    }
+   
 
 /* INDEX */
 .titulo_index  div h1{
@@ -505,59 +560,16 @@ div{
 
 
 /* PORTFOLIO */
-    .tamaño1{
-        height: 100px;
-        width: 200px;
-    }
-    .tamaño2{
-        height: 60,42px;
-        width: 200px;
-        top: 5px;
-    
-    }
-    .tamaño3{
-        height: 121.5px;
-        width: 200px;
-    
-    }
-    .tamaño4{
-        height: 142.8px;
-        width: 150px;
-    
-    }
-    .tamaño5{
-        height: 45px;
-        width: 200px;
-    
-    }
-    .tamaño6{
-        height: 225px;
-        width: 150px;
-    
-    }
-    .tamaño7{
-        height: 125px;
-        width: 200px;
-    
-    }
+
 
     
-    .trabajos h2{
-        line-height: 50px;
-        font-size: 20px;
-    }
     
-    .trabajos p{
-        line-height: 20px;
-        font-size: 10px;
-    
-    }
 
     .imgT{
         /* size: 20px; */
         font-size: 40px ;
     }
-
+    
 
 
     /* Grid *//* --------------------------------- */
@@ -569,12 +581,17 @@ div{
         "header header "
         "nav nav  "
         "b_bloque1 b_bloque1 "
-        "b_bloque2 b_bloque2 "  
-        "b_bloque3 b_bloque3 "
+        "b_bloque2a b_bloque2a "
+        "b_bloque2b b_bloque2b "  
+        "b_bloque3a b_bloque3a "
+        "b_bloque3b b_bloque3b "
         "m_bloque1 m_bloque1 "
-        "m_bloque2 m_bloque2 "
-        "m_bloque3 m_bloque3 "
-        "m_bloque4 m_bloque4"
+        "m_bloque2a m_bloque2a "
+        "m_bloque2b m_bloque2b "
+        "m_bloque3a m_bloque3a "
+        "m_bloque3b m_bloque3b "
+        "m_bloque4a m_bloque4a"
+        "m_bloque4b m_bloque4b"
         "footer footer"
         ;
     
@@ -584,22 +601,38 @@ div{
     .grilla_index{
         display:grid;
         grid-template-columns: repeat(2, 1fr);
-        grid-column-gap: 20%;
+        
         
         
         grid-template-areas:
             "header header"
             "nav nav "
-            "div div "
-            "div div"
-            "div div"
+            "div2 div2 "
+            "div2 div2"
+            "div2 div2"
             "footer footer"
         ;
         
         align-items: center;
         justify-items: center;
         
-    } 
+    }
+    .grilla_perfil{
+        display:grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-column-gap: 20%;
+        
+        
+        grid-template-areas:
+            "header header"
+            "nav nav"
+            "img_perfil  texto_perfil"
+            "footer footer"
+        ;
+        
+        align-items: center;
+        justify-items: center;
+    }
     
 }
 
@@ -610,6 +643,7 @@ div{
 
     nav{
         height: 50px;
+        width: 781px;
         padding: 50px;    
     }
 
@@ -622,60 +656,133 @@ div{
         line-height: 20px;
     }
 
-    /* PORTFOLIO */
+    
+    .Bordes_text h4{
+        width: 781px;
+    }
+    
+    #img_{
+        margin: 20px;
+    }
 
-    #b_bloque1{
-        height: 200px;
-    }
-    #b_bloque2{
-        height: 250px;
-    }
-    #b_bloque3{
-        height: 250px;
-    }
-    #m_bloque1{
-        height: 200px;
+    .titulo_index  div h1{
+        position: relative;
+        bottom: 20px;
+        right: 100px;
+        font-family: 'Montserrat', sans-serif ;
+        font-size: 30px;
+        color: white;
+        font-family: 'Montserrat', sans-serif ;
+        text-align: center;
+    
     
     }
-    #m_bloque2{ 
-        height: 300px;
-    }
-    #m_bloque3{
-        height: 500px;
-    }
-    #m_bloque4{
-        
-        height: 250px;
-    }
-  
+    
+     
+    .parrafo_index  div p{
+        width: auto;
+        height: auto;
+        font-size: 15px;
+    
+        position: relative;
+        /* bottom: 130px; */
+        right: 100px;
+        font-family: 'Montserrat', sans-serif ;
+        text-align: center;
+        color: white;
+       
+    } 
+
+
+
+
+
 
 /* Grid *//* --------------------------------- */
     
     .grilla_portfolio{
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(4, 1fr);
         /* grid-template-rows: repeat(10, 1fr); */
         grid-template-areas:
-        "header header header"
-        "nav nav nav "
-        "b_bloque1 b_bloque1 b_bloque1"
-        "b_bloque2 b_bloque2 b_bloque2 "  
+        "header header header header"
+        "nav nav nav nav"
+        "b_bloque1 b_bloque1 b_bloque1 b_bloque1"
+        "b_bloque2a b_bloque2a b_bloque2b b_bloque2b"  
       
-        "b_bloque3 b_bloque3  b_bloque3"
+        "b_bloque3a b_bloque3a  b_bloque3b b_bloque3b"
         
-        "m_bloque1 m_bloque1 m_bloque1"
+        "m_bloque1 m_bloque1 m_bloque1 m_bloque1"
         
-        "m_bloque2 m_bloque2 m_bloque2"
+        "m_bloque2a m_bloque2a m_bloque2b m_bloque2b"
         
-        "m_bloque3 m_bloque3 m_bloque3"
+        "m_bloque3a m_bloque3a m_bloque3b m_bloque3b"
         
-        "m_bloque4 m_bloque4 m_bloque4"
-        "footer footer footer"
+        "m_bloque4a m_bloque4a m_bloque4b m_bloque4b"
+        "footer footer footer footer"
         ;
     
 /* ------------------------------ */
 
     }
     .grilla_index{
+        display:grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-column-gap: 20%;
+        
+        
+        grid-template-areas:
+            "header header header"
+            "nav nav nav"
+            "div2 div2 div2 "
+            "div2 div2 div2"
+            "div2 div2 div2"
+            "footer footer footer"
+        ;
+        
+        align-items: center;
+        justify-items: center;
+        
+    } 
+
+    .grilla_perfil{
+        display:grid;
+        grid-template-columns: repeat(4, 1fr);
+       
+        
+        
+        grid-template-areas:
+            "header header header header"
+            "nav nav nav nav"
+            "img_perfil img_perfil texto_perfil texto_perfil"
+            "img_perfil img_perfil texto_perfil texto_perfil"
+            "img_perfil img_perfil texto_perfil texto_perfil"
+            "footer footer footer footer"
+        ;
+        
+        align-items: center;
+        justify-items: center;
+    }
+
+    .grilla_hobbie{
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 20%;
+    
+    
+    grid-template-areas:
+        "header header header"
+        "nav nav nav"
+        "titulo titulo titulo"
+        "div div div"
+        "div div div"
+        "footer footer footer"
+    ;
+    
+    align-items: center;
+    justify-items: center;
+    }
+
+    .grilla_contacto{
         display:grid;
         grid-template-columns: repeat(3, 1fr);
         grid-column-gap: 20%;
@@ -692,6 +799,5 @@ div{
         
         align-items: center;
         justify-items: center;
-        
-    } 
+    }
 }
